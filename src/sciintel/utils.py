@@ -5,7 +5,7 @@ import re
 import unicodedata
 from pathlib import Path
 
-SUPPORTED = {".pdf", ".md", ".markdown", ".txt"}
+SUPPORTED = {".pdf", ".doc", ".docx", ".rtf", ".md", ".markdown", ".txt"}
 
 
 def sha256_file(path: Path, chunk_size: int = 1024 * 1024) -> str:

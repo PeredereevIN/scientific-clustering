@@ -34,7 +34,7 @@ def build_parser() -> argparse.ArgumentParser:
     bench.add_argument("--seconds", type=int, default=20)
     bench.add_argument("--matrix-size", type=int, default=3072)
 
-    ing = sub.add_parser("ingest", help="Обработать PDF, Markdown и TXT из папки inbox")
+    ing = sub.add_parser("ingest", help="Конвертировать PDF, DOC, DOCX, RTF, TXT и Markdown из папки inbox")
     ing.add_argument("--dir", type=Path, default=settings.inbox)
 
     kw = sub.add_parser("keywords", help="Извлечь ключевые фразы методами YAKE и RAKE")
@@ -93,6 +93,16 @@ def build_parser() -> argparse.ArgumentParser:
 
     graph = sub.add_parser("export-neo4j", help="Экспортировать публикации, ключевые слова и сообщества в Neo4j")
     graph.add_argument("--run-id", default=None)
+
+    ling = sub.add_parser("linguistic-index", help="Конвертировать документы в Markdown и построить морфологический индекс")
+    ling.add_argument("--language", choices=["auto", "en", "ru"], default="auto")
+    ling.add_argument("--force", action="store_true")
+    ling.add_argument("--limit", type=int, default=None)
+
+    ling_search = sub.add_parser("linguistic-search", help="Поиск по предложениям, словоформам, леммам и понятиям")
+    ling_search.add_argument("query")
+    ling_search.add_argument("--kind", choices=["sentences", "tokens", "concepts"], default="sentences")
+    ling_search.add_argument("--limit", type=int, default=20)
     return parser
 
 
@@ -142,6 +152,18 @@ def main(argv: list[str] | None = None) -> int:
         _json(run_louvain(min_similarity=args.min_similarity, k=args.k,
                           resolution=args.resolution, min_community_size=args.min_community_size,
                           mutual=args.mutual, device=args.device))
+    elif args.command == "linguistic-index":
+        from .linguistic.pipeline import index_documents
+        _json(index_documents(language=args.language, force=args.force, limit=args.limit))
+    elif args.command == "linguistic-search":
+        from .linguistic.indexer import search_concepts, search_sentences, search_tokens
+        if args.kind == "concepts":
+            results = search_concepts(args.query, args.limit)
+        elif args.kind == "tokens":
+            results = search_tokens(args.query, args.limit)
+        else:
+            results = search_sentences(args.query, args.limit)
+        _json(results)
     elif args.command == "export-neo4j":
         from .graph import export_neo4j
         _json(export_neo4j(run_id=args.run_id))

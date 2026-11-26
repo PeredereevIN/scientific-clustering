@@ -15,20 +15,12 @@ log = logging.getLogger("sciintel")
 
 
 def read_document(path: Path) -> tuple[str, str, int]:
-    if path.suffix.lower() in {".md", ".markdown", ".txt"}:
-        raw = path.read_text(encoding="utf-8", errors="replace")
-        return clean_text(raw), "", 0
-    import pymupdf
-    pages_text: list[str] = []
-    metadata_title = ""
-    page_count = 0
-    with pymupdf.open(path) as pdf:
-        page_count = len(pdf)
-        metadata_title = (pdf.metadata or {}).get("title") or ""
-        for page_index in range(min(page_count, settings.max_pages)):
-            page = pdf.load_page(page_index)
-            pages_text.append(page.get_text("text", sort=True))
-    return clean_text("\n\n".join(pages_text)), metadata_title, page_count
+    from .linguistic.converters import convert_to_markdown
+
+    markdown, metadata = convert_to_markdown(path)
+    first_heading = next((line[2:].strip() for line in markdown.splitlines()
+                          if line.startswith("# ")), "")
+    return clean_text(markdown), first_heading, int(metadata.get("page_count", 0))
 
 
 def ingest(corpus_dir: Path | None = None) -> dict[str, int]:
@@ -37,7 +29,7 @@ def ingest(corpus_dir: Path | None = None) -> dict[str, int]:
     files = sorted(p for p in source_dir.rglob("*") if p.is_file() and p.suffix.lower() in SUPPORTED)
     stats = {"found": len(files), "new": 0, "existing": 0, "failed": 0}
     if not files:
-        log.warning("No PDF/MD/TXT documents found in %s", source_dir)
+        log.warning("No supported PDF/DOC/DOCX/RTF/MD/TXT documents found in %s", source_dir)
         return stats
     for path in tqdm(files, desc="Ingest", unit="doc"):
         try:
@@ -74,6 +66,7 @@ def ingest(corpus_dir: Path | None = None) -> dict[str, int]:
             out.mkdir(parents=True, exist_ok=True)
             text_path = out / "document.txt"
             text_path.write_text(text, encoding="utf-8")
+            (out / "document.md").write_text(text, encoding="utf-8")
             with db.connect() as conn:
                 conn.execute("""
                     INSERT OR IGNORE INTO documents
