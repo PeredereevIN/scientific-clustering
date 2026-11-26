@@ -1,0 +1,260 @@
+[
+  {
+    "group_id": "0",
+    "title": "Методы оптимизации и оптимального управления",
+    "description": "Основная тема: Методы оптимизации и оптимального управления. Подтверждающие направления: сильная выпуклость; оптимальное управление; Convex Optimization. Тема определена по сочетанию терминов и контекстных признаков заголовков и аннотаций. Исходные назначения графовой кластеризации не изменялись.",
+    "document_count": 312,
+    "status": "REVIEW_PROFILE",
+    "aspects": [
+      "сильная выпуклость",
+      "оптимальное управление",
+      "Convex Optimization"
+    ],
+    "representative_titles": [
+      "Convergence Analysis of Nesterov's Accelerated Gradient Descent under Relaxed Assumptions",
+      "Variance-Reduced Stochastic Hessian-Driven Nesterov Acceleration with Adam-Style Preconditioning",
+      "Broximal Gradient Descent in General Norms: Convergence without Fejér Monotonicity",
+      "Reinforcement learning for constrained stochastic linear--quadratic control in continuous time",
+      "Convergence Rates of Gaussian Process Thompson Sampling for Efficient Global Optimization"
+    ],
+    "review_titles": [
+      "A Hybrid Exact-Heuristic Solver for the Integrated Passenger and Parcel Transportation Problem",
+      "From Docket Minutes to Case Trajectories: Building Analysis-Ready Criminal Court Data",
+      "Legal aid eligibility and court outcomes: a design-based double-machine-learning approach",
+      "When are complements and substitutes dual?",
+      "Time-Varying Environmental and Polygenic Predictors of Substance Use Initiation in Youth: A Survival and Causal Modeling Study in the ABCD Cohort"
+    ]
+  },
+  {
+    "group_id": "1",
+    "title": "Большие языковые модели и интеллектуальный поиск",
+    "description": "Основная тема: Большие языковые модели и интеллектуальный поиск. Подтверждающие направления: языковые модели; генерация с дополнением извлечённой информацией (RAG); ответы на вопросы. Тема определена по сочетанию терминов и контекстных признаков заголовков и аннотаций. Исходные назначения графовой кластеризации не изменялись.",
+    "document_count": 255,
+    "status": "REVIEW_PROFILE",
+    "aspects": [
+      "языковые модели",
+      "генерация с дополнением извлечённой информацией (RAG)",
+      "ответы на вопросы"
+    ],
+    "representative_titles": [
+      "ForecastGym: A Live, Controlled, and Replayable Benchmark for Forecasting Agents",
+      "LMMR: Learned Multigranular Memory Retrieval for Small Language Model Agents",
+      "A System 1 Decision Model for Medical Multiple-Choice Questions Built on Frozen Language Models",
+      "Attribute or Abstain: Evaluating Evidence-Grounded Retrieval on the Low-Resource African Business Web",
+      "QueryFlow: Multi-Hop Graph Retrieval with Adaptive Query Evolution"
+    ],
+    "review_titles": [
+      "The Price of Submission",
+      "The Polyak-Łojasiewicz Paper: A 10-Year Retrospective",
+      "Towards High-Performance Multimodal Discovery: Evaluating Retrieval Efficacy and Operational Scalability in Digital Libraries",
+      "A generalized transition framework for identifying reduction domains in non-binary constituency parsing",
+      "The Influence of the Vocal Few: Evidence from Social Media Comments"
+    ]
+  },
+  {
+    "group_id": "2",
+    "title": "Вычислительная биология и медицинский искусственный интеллект",
+    "description": "Основная тема: Вычислительная биология и медицинский искусственный интеллект. Подтверждающие направления: вычислительная биология; искусственный интеллект в медицине. Тема определена по сочетанию терминов и контекстных признаков заголовков и аннотаций. Исходные назначения графовой кластеризации не изменялись.",
+    "document_count": 247,
+    "status": "MODERATE_PROFILE",
+    "aspects": [
+      "вычислительная биология",
+      "искусственный интеллект в медицине"
+    ],
+    "representative_titles": [
+      "Limitations of Sequence-Based Protein Representations for Parkinson's Disease Classification: A Leakage-Free Benchmark",
+      "Retracing the Process of Translation: Proteome-wide mapping of stable transcriptomic predictors of protein abundance in cancer cell lines",
+      "Multimodal Fusion: A Review of Breast Cancer Advanced and Traditional Modalities",
+      "MDAgent: A Multi-Agent Framework for End-to-End Molecular Dynamics Research",
+      "Fine-Tuned Small Language Model for Synthetic Clinical Data Generation and Predictive Healthcare Analytics"
+    ],
+    "review_titles": [
+      "An In-Ear Sleep Modulation SoC Featuring a CNN-LSTM Accelerator with Long-Kernel Memory Reuse and Runtime Dynamic Quantization",
+      "PCR-ALERA: A PCR-ELISA analogue but antibody-free DNA detection system",
+      "Federated SPARQL querying for genomic variant functional annotation",
+      "Hydrodynamics of robotic micro-swimmers in confinement",
+      "Fix, Don't Retake: Physics-Simulated Training for Correcting Patient Positioning Errors in Dental Panoramic Radiographs"
+    ]
+  },
+  {
+    "group_id": "3",
+    "title": "Робототехника и визуально-языковые модели действий (VLA)",
+    "description": "Основная тема: Робототехника и визуально-языковые модели действий (VLA). Подтверждающие направления: визуально-языковые модели действий (VLA); роботизированные манипуляции; модели действий и взаимодействия с миром. Тема определена по сочетанию терминов и контекстных признаков заголовков и аннотаций. Исходные назначения графовой кластеризации не изменялись.",
+    "document_count": 239,
+    "status": "REVIEW_PROFILE",
+    "aspects": [
+      "визуально-языковые модели действий (VLA)",
+      "роботизированные манипуляции",
+      "модели действий и взаимодействия с миром"
+    ],
+    "representative_titles": [
+      "ResWAM: Learning What Changes, Not What Stays, for World-Action Models",
+      "RePlan-VLA: Progress-Aware Replanning for Long-Horizon Vision-Language-Action Models",
+      "Vision-Language-Action Models: A Life-Cycle Survey of Design, Training and Deployment",
+      "PoliMop: Policy-in-the-Loop Motion Planning in 3D Spaces for Mobile Robots",
+      "DiWALI: Diffusion Policy Learning in World Models via Latent Action Inference from Human and Robot Play"
+    ],
+    "review_titles": [
+      "Thickness-Field-Excited Bimorph Piezoelectric Micromachined Ultrasonic Transducer in Submicrometer Thin-Film Lithium Niobate",
+      "Levio: Smart Actuated Back-Exoskeleton via Retrofit of a Commercial Passive Device",
+      "Bilayer Periodically Poled Piezoelectric Thin-Film Lithium Tantalate Platform for Passive-Layer-Free Flexural and Torsional Actuation",
+      "A Neuroprosthetic SoC Featuring Rapid Local Sensory Feedback with On-Chip Unsupervised Multi-Class Spike Sorting",
+      "BiPathCPG: A Novel Load-Sharing Design Architecture for Compound Planetary Gearboxes"
+    ]
+  },
+  {
+    "group_id": "4",
+    "title": "Интеллектуальные агенты и автономные системы",
+    "description": "Основная тема: Интеллектуальные агенты и автономные системы. Подтверждающие направления: интеллектуальные агенты на основе языковых моделей; агенты для программирования. Тема определена по сочетанию терминов и контекстных признаков заголовков и аннотаций. Исходные назначения графовой кластеризации не изменялись.",
+    "document_count": 192,
+    "status": "REVIEW_PROFILE",
+    "aspects": [
+      "интеллектуальные агенты на основе языковых моделей",
+      "агенты для программирования"
+    ],
+    "representative_titles": [
+      "From Process Models to Composable Agentic Workflows: Combining BPMN, Agents and Enterprise Knowledge",
+      "WebAgents: Unbundling Agent Creation, Hosting, and Execution for an Agent-Native Web",
+      "Incentive-Responsive Agents: A Principal-Agent Framework, Metric Suite, and Runtime Architecture for Long-Lived Personal AI Agents",
+      "When Agent Skills Go Stale: Runtime Behavior and Selective Maintenance in Evolving Environments",
+      "RSI-PDEbench: A Benchmark for Self-Improving Agents in PDE Solving"
+    ],
+    "review_titles": [
+      "Proceedings of the 2026 XCSP3 Competition",
+      "On Formal Counterfactual Explanations",
+      "Ceci n'est pas une pipe -- Toward a Symbolic Solver for the Abstraction and Reasoning Corpus Using Evolutionary Computation",
+      "Measuring Sudoku Difficulty: Formulation, Propagation and Uniqueness Certification",
+      "Executable Archaeology: Reanimating the Logic Theorist"
+    ]
+  },
+  {
+    "group_id": "5",
+    "title": "Экономика, рынки и влияние искусственного интеллекта",
+    "description": "Основная тема: Экономика, рынки и влияние искусственного интеллекта. Подтверждающие направления: рынки; труд; экономика искусственного интеллекта. Тема определена по сочетанию терминов и контекстных признаков заголовков и аннотаций. Исходные назначения графовой кластеризации не изменялись.",
+    "document_count": 163,
+    "status": "MODERATE_PROFILE",
+    "aspects": [
+      "рынки",
+      "труд",
+      "экономика искусственного интеллекта"
+    ],
+    "representative_titles": [
+      "AI and the Economy: An Economic Examination of Production, Distribution, Firms, Labor, and Welfare",
+      "Organizational Technology Ladders: Remote Work and Generative AI Adoption",
+      "When AI Gets Cheaper, Do Prices Follow? Information Delays and Algorithmic Pricing",
+      "Trust, Rule of Law, and the Size Premium: Evidence from a Meta-Analysis",
+      "Labour reallocation and production-network recomposition in the green transition"
+    ],
+    "review_titles": [
+      "Ranking-based competitive balance measures in Formula One",
+      "PPML and Heavy-Tailed Trade and Factor Flows: Why Standard Inference Fails and How to Fix It",
+      "Neural Network Methods in the 2BSDE Formalism for Solving the High-Dimensional Black--Scholes Equation with Transaction Costs",
+      "Taste or Strategy? Nationalistic Bias and Competitor Penalties in Figure Skating Judging",
+      "Motivation and Contribution in Open Source Software: A Meta-Analytic Investigation"
+    ]
+  },
+  {
+    "group_id": "6",
+    "title": "Визуально-языковые модели",
+    "description": "Основная тема: Визуально-языковые модели. Подтверждающие направления: визуально-языковые модели; Video Diffusion; генерация видео. Тема определена по сочетанию терминов и контекстных признаков заголовков и аннотаций. Исходные назначения графовой кластеризации не изменялись.",
+    "document_count": 136,
+    "status": "REVIEW_PROFILE",
+    "aspects": [
+      "визуально-языковые модели",
+      "Video Diffusion",
+      "генерация видео"
+    ],
+    "representative_titles": [
+      "MedJev: A System One Vision-Language Decision Model for Fast and Effective Medical Image Understanding",
+      "SEE: Unlocking the Hidden Perception of Frozen VLMs",
+      "Autoregressive View Model",
+      "ViLFlow: Parallel Vision-Language Generation with Continuous Latent Flows",
+      "Eyes in the Update? Learning Where Rewards Land in Multimodal Reasoning"
+    ],
+    "review_titles": [
+      "LightSEAD: Lightweight SE(3)-Aware Keypoint Detector through Selective Knowledge Distillation",
+      "Object Pose: The Link between Weak Perspective, Paraperspective, and Full Perspective",
+      "SWIR-cGAN: Synthesizing SWIR Bands Using VNIR Imagery from CBERS and AMAZONIA-1",
+      "PyFLI: A Python Library for Simulation, Parameter Estimation, and Benchmarking in Fluorescence Lifetime Imaging",
+      "Symmetry Detection with Patch Embedding Models by Means of a Scalar Product Transform"
+    ]
+  },
+  {
+    "group_id": "7",
+    "title": "Архитектуры языковых моделей и нейросетевые методы",
+    "description": "Основная тема: Архитектуры языковых моделей и нейросетевые методы. Подтверждающие направления: языковые модели; нейронные сети; спекулятивное декодирование. Тема определена по сочетанию терминов и контекстных признаков заголовков и аннотаций. Исходные назначения графовой кластеризации не изменялись.",
+    "document_count": 122,
+    "status": "REVIEW_PROFILE",
+    "aspects": [
+      "языковые модели",
+      "нейронные сети",
+      "спекулятивное декодирование"
+    ],
+    "representative_titles": [
+      "Measured Coupling for Parallel Decoding in Diffusion Language Models",
+      "Large Language Models without QK-Normalization",
+      "WeightBench: Evaluating Language Models as Weight-Space Programmers",
+      "Multi-Branch Transformer",
+      "K2-Horizon: A Frontier Fleet of Open Source Language Models"
+    ],
+    "review_titles": [
+      "An AI-Based OSSE Framework to Evaluate Learned Physical Consistency: A Multi-Model Study Using FourCastNet, Aurora, Prithvi WxC, and GraphCast",
+      "Overlooked and Underutilized: Prototypes are the Missing Piece in Tabular XAI",
+      "Searching the Pareto Front: Multi-Objective Retrieval for Heterogeneous Scientific Modalities",
+      "GEAR: A GPU-Accelerated Global Solver for Bounded Continuous Nonlinear Programs via Linear Bound Propagation",
+      "Razavi-Bench: Tracking AI Progress in Analog Circuit Reasoning"
+    ]
+  },
+  {
+    "group_id": "8",
+    "title": "Интегрированные системы связи и зондирования (ISAC)",
+    "description": "Основная тема: Интегрированные системы связи и зондирования (ISAC). Подтверждающие направления: интегрированное зондирование; оценивание канала связи; модель канала связи. Тема определена по сочетанию терминов и контекстных признаков заголовков и аннотаций. Исходные назначения графовой кластеризации не изменялись.",
+    "document_count": 110,
+    "status": "MODERATE_PROFILE",
+    "aspects": [
+      "интегрированное зондирование",
+      "оценивание канала связи",
+      "модель канала связи"
+    ],
+    "representative_titles": [
+      "Joint Power and Adaptive-Constellation Optimization for OFDM-ISAC Systems",
+      "Distributed Pinching-Antenna Architecture for Communication and Target Positioning",
+      "Reliable Bistatic Ranging With Unreliable Communication Payloads",
+      "Bistatic UAV-Based 3D SAR Imaging Using Integrated Sensing and Communications Transceivers",
+      "Angle Estimation for Initial Access in True-Time-Delay Systems: Communication and Sensing Tradeoff"
+    ],
+    "review_titles": [
+      "Who sees the sea? Sea-view potential by façade and floor from cadastral LoD1 models on the Costa del Sol",
+      "Automated detection of wild and cultivated plants in citizen science records",
+      "Machine Learning for Near Real-Time Identification of Wildfire Burned Areas",
+      "ARIA: Anti-diagonal Reduced-cost Index-masked Adaptive BLMS Algorithm",
+      "Real-Time Trans-Oceanic Fiber Sensing via Convergence of Long-Reach OFDR, High-Speed Optical Networking, and RDMA-Capable Edge-GPUs"
+    ]
+  },
+  {
+    "group_id": "9",
+    "title": "Генеративные рекомендательные системы и семантические идентификаторы",
+    "description": "Основная тема: Генеративные рекомендательные системы и семантические идентификаторы. Подтверждающие направления: генеративные рекомендательные системы; рекомендательные системы; семантические идентификаторы. Тема определена по сочетанию терминов и контекстных признаков заголовков и аннотаций. Исходные назначения графовой кластеризации не изменялись.",
+    "document_count": 94,
+    "status": "MODERATE_PROFILE",
+    "aspects": [
+      "генеративные рекомендательные системы",
+      "рекомендательные системы",
+      "семантические идентификаторы"
+    ],
+    "representative_titles": [
+      "Learning Better Reasoning for Generative Recommendation with Semantic IDs",
+      "REGER: Modeling inter-item Relations with Semantic IDs for Generative Recommendation",
+      "SPRIG: Semantic-ID-enhanced Paths for Knowledge Graph-based Generative Recommendation",
+      "SPAR: Stepwise Personalized Autoregressive Recommendation with Prefix-Balanced Semantic IDs",
+      "KuaFu: Compressing Long User Behavior into Understanding at Billion Scale"
+    ],
+    "review_titles": [
+      "Happy Birthday? Age Labels, Search Criteria, and Matching from Dating to Marriage",
+      "EventGPT: Next-Event Pretraining on Banking Customer Histories",
+      "Shopping by algorithm: How agentic AI deploys human heuristics as a surrogate consumer",
+      "Commercial Intent in Human-AI Conversations: A Corpus Audit and Architecture for Website Sales Agents",
+      "Calibrating Reproduced Claims in Recommender Systems"
+    ]
+  }
+]

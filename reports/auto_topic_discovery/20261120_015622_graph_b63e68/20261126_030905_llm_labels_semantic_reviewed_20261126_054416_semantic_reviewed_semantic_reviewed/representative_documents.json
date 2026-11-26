@@ -1,0 +1,354 @@
+{
+  "0": [
+    {
+      "document_id": "499429a7a1404ff41b14518d",
+      "title": "A Stochastic Proximal-Gradient Method for Regularized Generally Constrained Continuous Optimization",
+      "domain": "optimization_control",
+      "cosine_to_centroid": 0.9314250946044922
+    },
+    {
+      "document_id": "17ef8d6a7e86adfb21fa0546",
+      "title": "Douglas--Rachford Algorithm with Relaxed Resolvents",
+      "domain": "optimization_control",
+      "cosine_to_centroid": 0.9286006689071655
+    },
+    {
+      "document_id": "e4e23dd97493d5ddf5d73f31",
+      "title": "LongTails: Automated Research in Optimization",
+      "domain": "optimization_control",
+      "cosine_to_centroid": 0.928246021270752
+    },
+    {
+      "document_id": "86cb88737ea4beae2bc097ad",
+      "title": "RALES: A Risk-Averse Augmented Lagrangian Equality-Constrained SQP Method",
+      "domain": "optimization_control",
+      "cosine_to_centroid": 0.9262697100639343
+    },
+    {
+      "document_id": "0b8435ce084f5036f3056ee8",
+      "title": "A Retrospective-Approximation Interior-Point Method",
+      "domain": "optimization_control",
+      "cosine_to_centroid": 0.9253838062286377
+    }
+  ],
+  "1": [
+    {
+      "document_id": "1e38105168fc30372b0dde4b",
+      "title": "Right Goal, Wrong Body: Re-grounding Frozen VLAs under Actuation Shift",
+      "domain": "robotics",
+      "cosine_to_centroid": 0.9389837980270386
+    },
+    {
+      "document_id": "ab4eba7e9247b67bf55364b8",
+      "title": "WinDEX: Metric 3D Hand Motion Reconstruction in the Wild for Dexterous Teleoperation and Policy Learning",
+      "domain": "robotics",
+      "cosine_to_centroid": 0.93495112657547
+    },
+    {
+      "document_id": "241ba1200c9272d012550057",
+      "title": "Generalized Inverse Kinematics via Conditional Flow",
+      "domain": "robotics",
+      "cosine_to_centroid": 0.9330697655677795
+    },
+    {
+      "document_id": "f9be6ce871a7aa7eff080745",
+      "title": "Lazy-MOSAIC: Accelerating Skill-Centric Manipulation Planning with Learned Skill-Effect World Models",
+      "domain": "robotics",
+      "cosine_to_centroid": 0.932915210723877
+    },
+    {
+      "document_id": "94bfa3d07f1e93b59bc147a3",
+      "title": "From Human Videos to Bimanual Dexterous Manipulation Data: Confidence-Guided RL Refinement of Video Priors",
+      "domain": "robotics",
+      "cosine_to_centroid": 0.9328660368919373
+    }
+  ],
+  "2": [
+    {
+      "document_id": "417fe0ed192c75c0a7fbe5a2",
+      "title": "Yuanbao-Reranker: Document-Grounded Synthesis and Preference Distillation for Text Reranking",
+      "domain": "information_retrieval",
+      "cosine_to_centroid": 0.9370331764221191
+    },
+    {
+      "document_id": "a3db955c7deddc97f941cf29",
+      "title": "Reasoning Reranking with Semantic IDs as the Sole Item Representation",
+      "domain": "information_retrieval",
+      "cosine_to_centroid": 0.9351378679275513
+    },
+    {
+      "document_id": "b582d4c25de218e0ed048820",
+      "title": "IntentGEO: Intent-aware Generative Engine Optimization for Recommendation",
+      "domain": "information_retrieval",
+      "cosine_to_centroid": 0.9327996373176575
+    },
+    {
+      "document_id": "778ba0bde2c3155060c23807",
+      "title": "CLEAR: Legible and Steerable Recommendation via Grounded Natural-Language Interests",
+      "domain": "artificial_intelligence",
+      "cosine_to_centroid": 0.9298944473266602
+    },
+    {
+      "document_id": "f042cff310e5ff8d736c8184",
+      "title": "MemCredit: From Relevance to Utility for Decision-Time Memory in Long-Horizon Web Agents",
+      "domain": "artificial_intelligence",
+      "cosine_to_centroid": 0.928862988948822
+    }
+  ],
+  "3": [
+    {
+      "document_id": "0c6d322d60dd5f3ab8885086",
+      "title": "K2-Horizon: A Frontier Fleet of Open Source Language Models",
+      "domain": "artificial_intelligence",
+      "cosine_to_centroid": 0.945392370223999
+    },
+    {
+      "document_id": "9c951b0c884a40deb04b4d2b",
+      "title": "Grounding Language Models in Speech Does Not Fix \"AI Flavor\": Calibrated LLM Judges, Goodhart Traps, and a Preference-Tuning Fix",
+      "domain": "language_technology",
+      "cosine_to_centroid": 0.9347643852233887
+    },
+    {
+      "document_id": "5318082260b3caee68b33cb8",
+      "title": "WeightBench: Evaluating Language Models as Weight-Space Programmers",
+      "domain": "machine_learning",
+      "cosine_to_centroid": 0.9334350824356079
+    },
+    {
+      "document_id": "ec8a56f521088dc52748b264",
+      "title": "Creating Steering Vectors via Input Optimisation",
+      "domain": "language_technology",
+      "cosine_to_centroid": 0.9290830492973328
+    },
+    {
+      "document_id": "01de547997a0b4ab5c81ef74",
+      "title": "Confidence Without Cause: Predicting and Localizing Physics-Shortcut Sensitivity in Language Model Hidden States",
+      "domain": "artificial_intelligence",
+      "cosine_to_centroid": 0.9241980314254761
+    }
+  ],
+  "4": [
+    {
+      "document_id": "23e5bd695f94f1400e8ed0bd",
+      "title": "Incentive-Responsive Agents: A Principal-Agent Framework, Metric Suite, and Runtime Architecture for Long-Lived Personal AI Agents",
+      "domain": "artificial_intelligence",
+      "cosine_to_centroid": 0.9325151443481445
+    },
+    {
+      "document_id": "8f33fc0ee0101ff14235186d",
+      "title": "SPLICE: Structured Prompt Local Iterative Combinatorial Evolution",
+      "domain": "artificial_intelligence",
+      "cosine_to_centroid": 0.9322634935379028
+    },
+    {
+      "document_id": "40ba052a368ace0f9e0118ca",
+      "title": "Thinking Fast, Anywhere: One System-1 for the Decision Points of Any Agent Workflow",
+      "domain": "artificial_intelligence",
+      "cosine_to_centroid": 0.9292629361152649
+    },
+    {
+      "document_id": "5052cfcdd789b51643b77d2f",
+      "title": "Learning to Coordinate: LLM-Guided Workflow Evolution for Token-Efficient Red Teaming",
+      "domain": "artificial_intelligence",
+      "cosine_to_centroid": 0.927622377872467
+    },
+    {
+      "document_id": "f06be4821c9bb50ec76f0970",
+      "title": "WorkflowArena: Benchmarking Executable Workflow Orchestration in LLM-Based Multi-Agent Systems",
+      "domain": "language_technology",
+      "cosine_to_centroid": 0.9226745963096619
+    }
+  ],
+  "5": [
+    {
+      "document_id": "494dc191fef79cb969395c24",
+      "title": "Trust, Rule of Law, and the Size Premium: Evidence from a Meta-Analysis",
+      "domain": "economics_general",
+      "cosine_to_centroid": 0.9033569097518921
+    },
+    {
+      "document_id": "6c6476801d74855ef5099b39",
+      "title": "Crisis without Collapse: A Theory of Capitalist Persistence",
+      "domain": "economics_general",
+      "cosine_to_centroid": 0.9028597474098206
+    },
+    {
+      "document_id": "6ddac7d5410fb5339d87962d",
+      "title": "Can Artificial Intelligence Forecast Treatment Effects in Economics?",
+      "domain": "economics_general",
+      "cosine_to_centroid": 0.898392379283905
+    },
+    {
+      "document_id": "9aa1c267025a7b1483c8bf0f",
+      "title": "Demand Models for Market-Level Data with Closed-Form Inverses",
+      "domain": "economics_general",
+      "cosine_to_centroid": 0.895455539226532
+    },
+    {
+      "document_id": "dcc0cbad727b94fc8f08695e",
+      "title": "Which Text Matters: Handling Model Uncertainty in Text-as-Data Regressions, with an Application to Central Bank Communication",
+      "domain": "economics_general",
+      "cosine_to_centroid": 0.8947147130966187
+    }
+  ],
+  "6": [
+    {
+      "document_id": "f6f3e64c278548b227dcd896",
+      "title": "ReSynth: Constructing Synthetic Supervision for Multi-Image Understanding",
+      "domain": "computer_vision",
+      "cosine_to_centroid": 0.9351908564567566
+    },
+    {
+      "document_id": "f3c034f400f895d4885e4340",
+      "title": "SEE: Unlocking the Hidden Perception of Frozen VLMs",
+      "domain": "computer_vision",
+      "cosine_to_centroid": 0.933899998664856
+    },
+    {
+      "document_id": "8feeab411975f276f9d265f1",
+      "title": "VideoNexus: Video Perception Beyond the Reasoning Context",
+      "domain": "computer_vision",
+      "cosine_to_centroid": 0.9221682548522949
+    },
+    {
+      "document_id": "15525eda9cab42ad6235622d",
+      "title": "VIVID: Beyond Static Multi-Image Reasoning with Localized Visual Differences and Textual Entity Dynamics in Video MLLMs",
+      "domain": "computer_vision",
+      "cosine_to_centroid": 0.9208159446716309
+    },
+    {
+      "document_id": "fc76552d6689297d555568e6",
+      "title": "Do Diffusion Models Learn to Generalize Basic Visual Skills?",
+      "domain": "computer_vision",
+      "cosine_to_centroid": 0.9206514358520508
+    }
+  ],
+  "7": [
+    {
+      "document_id": "03dc4f847abe74c0a34f75cf",
+      "title": "RegimeFormer: A Large Protein Model of Global Perturbation Regimes",
+      "domain": "quantitative_biology",
+      "cosine_to_centroid": 0.9364477396011353
+    },
+    {
+      "document_id": "8210fee525c4e28a689b8344",
+      "title": "TadA-Bench: A Million-Variant Benchmark for Future-Round Discovery Toward Agentic Protein Engineering",
+      "domain": "quantitative_biology",
+      "cosine_to_centroid": 0.913308322429657
+    },
+    {
+      "document_id": "1868246022ca926e1ddf2c26",
+      "title": "Refnd: Preventing Data Leakage in Relational Datasets",
+      "domain": "quantitative_biology",
+      "cosine_to_centroid": 0.9085027575492859
+    },
+    {
+      "document_id": "5d950828da498845e34cdc10",
+      "title": "ProtDBench: A Unified Benchmark of Protein Binder Design and Evaluation",
+      "domain": "quantitative_biology",
+      "cosine_to_centroid": 0.9069436192512512
+    },
+    {
+      "document_id": "3083be7250dcf48efb2df1ee",
+      "title": "MultiMolecule: a modular ecosystem for biomolecular sequence-model workflows",
+      "domain": "quantitative_biology",
+      "cosine_to_centroid": 0.9054098129272461
+    }
+  ],
+  "8": [
+    {
+      "document_id": "d88b345f763ad6e5b2cdee13",
+      "title": "Distributed Pinching-Antenna Architecture for Communication and Target Positioning",
+      "domain": "signal_processing",
+      "cosine_to_centroid": 0.9195540547370911
+    },
+    {
+      "document_id": "63ee1f6183a0d5b49ee962af",
+      "title": "CFAR Detection on Non-Coherently Integrated Angular Maps for mmWave Radio SLAM",
+      "domain": "signal_processing",
+      "cosine_to_centroid": 0.9129028916358948
+    },
+    {
+      "document_id": "42c3993875b26e33df9ea47e",
+      "title": "RayAR: Autoregressive Dominant Path Generation for Low-Overhead MIMO Beam Alignment",
+      "domain": "signal_processing",
+      "cosine_to_centroid": 0.9072426557540894
+    },
+    {
+      "document_id": "b6c03d28cbbdb8b0d08ab5b2",
+      "title": "Capture-Aware Predictive OFDM Reacquisition in Clock-Asynchronous Space-Air-Ground Networks",
+      "domain": "signal_processing",
+      "cosine_to_centroid": 0.9005547165870667
+    },
+    {
+      "document_id": "491dc9afa87ac12104163380",
+      "title": "MPSi: Neural Extraction of Site-Specific Multipath Propagation Properties for Massive MIMO",
+      "domain": "signal_processing",
+      "cosine_to_centroid": 0.8953458070755005
+    }
+  ],
+  "9": [
+    {
+      "document_id": "51c7a84ac536136db39e447f",
+      "title": "A frontier machine intelligence for human neuroimaging",
+      "domain": "artificial_intelligence",
+      "cosine_to_centroid": 0.9012444019317627
+    },
+    {
+      "document_id": "c980dd51c9c4d1aa0c4e2ed1",
+      "title": "Leakage-aware calibrated decision-level fusion for mental-health text classification",
+      "domain": "language_technology",
+      "cosine_to_centroid": 0.89182049036026
+    },
+    {
+      "document_id": "e71d71c8356a9b7b588737e7",
+      "title": "DiagTrace: An Interactive Benchmark for Clinical Decision Making",
+      "domain": "language_technology",
+      "cosine_to_centroid": 0.8860522508621216
+    },
+    {
+      "document_id": "49f5f62789fa89d90857d332",
+      "title": "Can decision models extract clinical data from cancer pathology reports? An evaluation of accuracy, calibration, and failure modes",
+      "domain": "language_technology",
+      "cosine_to_centroid": 0.8823636770248413
+    },
+    {
+      "document_id": "3580ea5a1d91adbe5ab96a69",
+      "title": "AcupunctureBench: A Multimodal Benchmark for Evaluating Generative Models in the Acupuncture Domain",
+      "domain": "quantitative_biology",
+      "cosine_to_centroid": 0.8774996399879456
+    }
+  ],
+  "10": [
+    {
+      "document_id": "7d0e6e9358b914d0496c8242",
+      "title": "Variational Filtering for Bayesian Last Layers with an Independent Binary Probit Surrogate",
+      "domain": "statistical_learning",
+      "cosine_to_centroid": 0.9174913167953491
+    },
+    {
+      "document_id": "5b75bc9b767fd64e492318e1",
+      "title": "A Systematic Analysis of a Small Optimal Subspace for Physics-Informed Neural Networks: $n$-DAS $\\subset \\mathbb{R}^p$",
+      "domain": "machine_learning",
+      "cosine_to_centroid": 0.910053551197052
+    },
+    {
+      "document_id": "95f9b2934598de1e3f046c2c",
+      "title": "Modular Bayesian Foundation Models: Bayesian time series encoders for OOD detection, routing and forecasting",
+      "domain": "statistical_learning",
+      "cosine_to_centroid": 0.9093472957611084
+    },
+    {
+      "document_id": "88442aba499068885154cfbe",
+      "title": "Continuous-depth Deep Gaussian Processes",
+      "domain": "statistical_learning",
+      "cosine_to_centroid": 0.9065660834312439
+    },
+    {
+      "document_id": "e74aa9854171d56e063957e1",
+      "title": "Analyzing Learning-Dynamics Across Loss and Prediction Choices for Diffusion Models",
+      "domain": "machine_learning",
+      "cosine_to_centroid": 0.906454861164093
+    }
+  ]
+}

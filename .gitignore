@@ -1,0 +1,21 @@
+# Локальные данные корпуса и секреты
+data/
+.env
+
+# Виртуальное окружение и кэш Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Сборка Python-пакета
+build/
+dist/
+*.egg-info/
+
+# Локальные временные файлы
+*.log
+.DS_Store
+Thumbs.db

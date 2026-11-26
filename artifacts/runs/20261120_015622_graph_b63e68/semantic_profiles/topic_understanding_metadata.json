@@ -1,0 +1,49 @@
+{
+  "engine": "Cluster Topic Understanding",
+  "version": "1.2.1",
+  "method": "title + canonical abstract topic profiling; title-aware and specificity-aware term ranking; lexical-versus-ontology evidence provenance; evidence-sensitive bilingual naming; separate name-confidence and profile-coherence diagnostics; TF-IDF coherence; optional within-cluster KMeans/silhouette diagnostics",
+  "uses_llm": false,
+  "uses_external_translation_service": false,
+  "uses_group_id_specific_topic_rules": false,
+  "uses_corpus_independent_concept_patterns": true,
+  "synthetic_concept_tags_used_for_candidate_extraction_only": true,
+  "cluster_assignments_changed": false,
+  "uses_legacy_automatic_labels": false,
+  "source_documents": 1870,
+  "documents_analyzed": 1870,
+  "noise_documents": 0,
+  "groups_analyzed": 10,
+  "text_source_modes": {
+    "explicit_abstract": 1865,
+    "title_only": 5
+  },
+  "config": {
+    "max_abstract_chars": 5000,
+    "fallback_intro_chars": 2200,
+    "max_features": 60000,
+    "ngram_max": 4,
+    "min_candidate_prevalence": 0.03,
+    "min_primary_prevalence": 0.12,
+    "min_secondary_prevalence": 0.08,
+    "max_topics_per_group": 3,
+    "min_subtopic_group_size": 24,
+    "max_subtopics": 5,
+    "min_subtopic_silhouette": 0.16,
+    "min_subtopic_size": 5,
+    "random_state": 42
+  },
+  "important_limitations": [
+    "Topic evidence is extracted primarily from title and canonical abstract; when no abstract is available, the PDF intro fallback is used and flagged.",
+    "Russian naming is deterministic and dictionary-backed; unknown terms may remain in English rather than being mistranslated.",
+    "Candidate CSV distinguishes literal lexical support from ontology-only support; title_support_docs includes both forms of title evidence, with literal_title_support_docs and ontology_title_support_docs reported separately.",
+    "Naming confidence is a separate heuristic about term evidence; topic_profile_status describes textual profile support/coherence. Neither score is a calibrated probability.",
+    "Ontology-derived synthetic tags are used only in the candidate-count matrices; the TF-IDF coherence matrix uses unmodified title+abstract text.",
+    "Naming scores and topic profile scores are heuristic evidence summaries, not calibrated probabilities.",
+    "Internal KMeans subtopics are diagnostic and do not change the original graph/density-clustering assignments.",
+    "The 2D UMAP x/y coordinates are not treated as semantic embeddings.",
+    "No SPECTER embedding matrix is loaded unless an explicit verified embedding integration is added; current coherence uses TF-IDF on titles and abstracts.",
+    "No automatic cluster reassignment is performed."
+  ],
+  "missing_text_files": 0,
+  "canonical_source_abstracts": 1870
+}
