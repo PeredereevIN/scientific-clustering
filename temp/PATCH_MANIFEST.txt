@@ -1,0 +1,29 @@
+Patch: scientific-clustering linguistic analysis
+Target repository: PeredereevIN/scientific-clustering
+Target layout: src/sciintel (src layout), Python 3.12
+
+New files:
+  src/sciintel/linguistic/__init__.py
+  src/sciintel/linguistic/analyzer.py
+  src/sciintel/linguistic/converters.py
+  src/sciintel/linguistic/indexer.py
+  src/sciintel/linguistic/pipeline.py
+  tests/test_linguistic_analyzer.py
+  scripts/install_linguistic_models.ps1
+
+Existing files updated by apply_patch.py:
+  README.md
+  pyproject.toml
+  requirements.txt
+  src/sciintel/utils.py
+  src/sciintel/ingest.py
+  src/sciintel/cli.py
+  dashboard/app.py
+
+Features: PDF/DOC/DOCX/RTF/TXT/Markdown conversion; English/Russian spaCy
+morphology, POS, lemmas, morph features, dependency parse; sentence and token
+positions; punctuation preservation; noun-phrase concept candidates; concept
+occurrences; SQLite FTS5 search.
+
+Archive contains only the patch, not the full project or corpus.
+GitHub is read-only and is not modified by this patch.

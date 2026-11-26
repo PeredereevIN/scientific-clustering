@@ -1,0 +1,26 @@
+--index-url https://download.pytorch.org/whl/cu132
+--extra-index-url https://pypi.org/simple
+
+# Единый набор библиотек для проекта и тестов (Python 3.12, Windows x64).
+torch==2.14.0
+sentence-transformers==6.2.0
+numpy>=2.1,<3
+scipy>=1.14,<2
+pandas>=2.2,<4
+scikit-learn==1.9.1
+pymupdf==2.1
+hdbscan>=0.8.40,<0.9
+umap-learn==0.6.0
+rake-nltk==1.0.6
+networkx>=3.4,<4
+igraph==1.0.0
+leidenalg==0.12.0
+yake==0.7.3
+streamlit==1.67.0
+plotly>=6.3,<7
+matplotlib>=3.9,<4
+psutil>=7,<8
+python-dotenv>=1.1,<2
+tqdm>=4.67,<5
+neo4j>=6.4,<7
+pytest>=8.3,<10

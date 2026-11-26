@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=75", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "scientific-clustering"
+version = "1.0.0"
+description = "Анализ научных публикаций и поиск тематических сообществ"
+requires-python = ">=3.12,<3.13"
+dependencies = []
+
+[project.scripts]
+sciintel = "sciintel.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

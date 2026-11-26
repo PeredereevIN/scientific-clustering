@@ -1,0 +1,79 @@
+elif page == "Лингвистический анализ":
+    st.markdown("### Морфология, лемматизация и позиционный индекс")
+    st.caption("Английская и русская spaCy-модели. Пунктуация сохраняется как токены; позиции отсчитываются от начала Markdown-документа.")
+    language = st.selectbox("Язык корпуса", ["auto", "en", "ru"], format_func=lambda x: {"auto":"Автоопределение","en":"Английский","ru":"Русский"}[x])
+    force = st.checkbox("Переиндексировать уже обработанные документы", value=False)
+    if st.button("Построить / обновить лингвистический индекс", type="primary"):
+        with st.spinner("Конвертирую документы, выполняю морфологический и синтаксический анализ..."):
+            from sciintel.linguistic.pipeline import index_documents
+            result = index_documents(language=language, force=force)
+        st.json(result)
+        if result.get("failed"):
+            st.warning("Часть документов не обработана. Проверьте журнал и наличие языковых моделей.")
+    st.divider()
+    tab_sent, tab_tokens, tab_concepts = st.tabs(["Поиск по предложениям", "Слова и леммы", "Предметные понятия"])
+    with tab_sent:
+        sentence_query = st.text_input("Текстовый запрос", key="ling_sentence_query", placeholder="например: neural network")
+        if st.button("Найти предложения", key="ling_sentence_search", disabled=not sentence_query.strip()):
+            from sciintel.linguistic.indexer import search_sentences
+            try:
+                found = search_sentences(sentence_query.strip(), 100)
+                st.write(f"Найдено: {len(found)}")
+                for item in found:
+                    with st.container(border=True):
+                        st.markdown(f"**{item['title'] or item['document_id']}**")
+                        st.write(item["text"])
+                        st.caption(f"Документ {item['document_id']} · предложение {item['sentence_index']} · символы [{item['char_start']}, {item['char_end']})")
+            except Exception as exc:
+                st.error(f"Ошибка поискового запроса FTS5: {exc}")
+    with tab_tokens:
+        token_query = st.text_input("Словоформа или лемма", key="ling_token_query", placeholder="например: networks или network")
+        if st.button("Найти токены", key="ling_token_search", disabled=not token_query.strip()):
+            from sciintel.linguistic.indexer import search_tokens
+            try:
+                found = search_tokens(token_query.strip(), 200)
+                st.write(f"Найдено токенов: {len(found)}")
+                if found:
+                    st.dataframe(pd.DataFrame(found), use_container_width=True, hide_index=True)
+                else:
+                    st.info("Совпадений нет. Проверьте лемму или сначала постройте индекс.")
+            except Exception as exc:
+                st.error(f"Ошибка поиска токенов: {exc}")
+    with tab_tokens:
+        token_query = st.text_input("Словоформа или лемма", key="ling_token_query", placeholder="например: networks или network")
+        if st.button("Найти токены", key="ling_token_search", disabled=not token_query.strip()):
+            from sciintel.linguistic.indexer import search_tokens
+            try:
+                found = search_tokens(token_query.strip(), 200)
+                st.write(f"Найдено токенов: {len(found)}")
+                if found:
+                    st.dataframe(pd.DataFrame(found), use_container_width=True, hide_index=True)
+                else:
+                    st.info("Совпадений нет. Проверьте лемму или сначала постройте индекс.")
+            except Exception as exc:
+                st.error(f"Ошибка поиска токенов: {exc}")
+    with tab_concepts:
+        concept_query = st.text_input("Понятие или лемма", key="ling_concept_query", placeholder="например: neural network")
+        if st.button("Найти понятия и вхождения", key="ling_concept_search", disabled=not concept_query.strip()):
+            from sciintel.linguistic.indexer import search_concepts
+            try:
+                found = search_concepts(concept_query.strip(), 100)
+                if found:
+                    st.dataframe(pd.DataFrame(found), use_container_width=True, hide_index=True)
+                    with db.connect() as conn:
+                        from sciintel.linguistic.indexer import init_linguistic_schema
+                        init_linguistic_schema(conn)
+                        ids = [int(x["id"]) for x in found]
+                        marks = ",".join("?" for _ in ids)
+                        occurrences = conn.execute(f"""SELECT c.canonical_form,o.surface_form,d.title,o.document_id,
+                            s.sentence_index,s.text,o.char_start,o.char_end,o.token_start,o.token_end
+                            FROM concept_occurrences o JOIN concepts c ON c.id=o.concept_id
+                            JOIN documents d ON d.id=o.document_id JOIN sentences s ON s.id=o.sentence_id
+                            WHERE c.id IN ({marks}) ORDER BY c.canonical_form,d.title LIMIT 300""", ids).fetchall()
+                    st.markdown("#### Найденные вхождения")
+                    st.dataframe(pd.DataFrame([dict(x) for x in occurrences]), use_container_width=True, hide_index=True)
+                else:
+                    st.info("Понятия не найдены. Сначала постройте лингвистический индекс.")
+            except Exception as exc:
+                st.error(f"Ошибка поиска понятий: {exc}")
+
